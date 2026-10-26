@@ -1,6 +1,6 @@
 console.log("Hello World!");
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
-let favoriteFoods = ["Pizza", "Sushi", "Pasta", "Burgers", "Ramen", "Tacos"];
+let favoriteFoods = ["Pizza", "Bread", "Pasta", "Burgers", "Ramen", "Tacos"];
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
@@ -65,7 +65,7 @@ console.log(foodsWithA);
 let longFoodNames = [];
 for (let i = 0; i < friendFavorites.length; i++) {
     if (friendFavorites[i].length > 6) {
-        longFoodNames.push(friendFavorites[i]);
+        longFoodNames.push(" " + friendFavorites[i]);
     }
 }
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
@@ -73,14 +73,14 @@ for (let i = 0; i < friendFavorites.length; i++) {
 let shortFoodNames = [];
 for (let i = 0; i < friendFavorites.length; i++) {
     if (friendFavorites[i].length <= 6) {
-        shortFoodNames.push(friendFavorites[i]);
+        shortFoodNames.push(" "+ friendFavorites[i]);
     }
 }
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
-console.log("Long food names:", longFoodNames);
-console.log("Short food names:", shortFoodNames);
+console.log("Long food names:" + longFoodNames + "\n");
+console.log("Short food names:" + shortFoodNames + "\n");
 
 if (longFoodNames.length > shortFoodNames.length) {
     console.log("There are more long named foods.");
